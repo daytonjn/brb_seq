@@ -26,7 +26,7 @@ Sequencing a large number of samples with biological replicates is required for 
  3. Align .fastq files to genome & quantify per-barcode gene expression
     - 03_map_reads_norrna.sh (STAR/STARsolo)
     - barcodes.txt
- 4. Generate sample read count matrix in R & output files
+ 4. Using the .mtx output from STAR & barcode:sample key, generate read count matrix in R & output files 
     - 04_generate_read_counts.R
  5. Perform base RNAseq analysis for DEGs
      -analysis_brbseq.R (limma-voom & edgeR, limorhyde)
